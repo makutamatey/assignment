@@ -1,0 +1,79 @@
+.container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 20% 1fr 20% ;
+    grid-template-areas: 
+    "header header header "
+    " sidebar content ad"
+    " footer footer footer";
+    grid-gap: 1em
+}
+
+.header {
+    grid-area: header;
+    grid-gap: 1em;
+    background-color:green;
+    color: bisque;
+    
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color:bisque;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    
+
+}
+.content{
+    display: grid;
+    grid-area: content;
+    position: relative;
+    grid-column: 1fr;
+}
+.footer {
+    grid-area: footer;
+    background-color:green;
+    display: inline-block;
+}
+.ad {
+    grid-area: ad;
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+#branding{
+    font-size: medium;
+}
+
+ul > li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: white
+    
+}
+li > a{
+    color: bisque
+}
+a:active{
+    color: greenyellow;
+
+}
+a:hover{
+    color: greenyellow
+}
+#welcome_msg{
+    position: absolute;
+    background-color: white;
+    color: green;
+    bottom: 150px;
+    right: 270px
+}
